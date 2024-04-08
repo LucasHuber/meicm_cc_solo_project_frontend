@@ -21,8 +21,16 @@
     <form id="form" action="">
         <input id="input" autocomplete="off" /><button>Send</button>
     </form>
+    <!-- <script src="<SOCKET_URI_PLACEHOLDER>/socket.io/socket.io.js"></script> -->
     <script src="https://meicm-cc-solo-project-socket-pjxah7gudq-uc.a.run.app/socket.io/socket.io.js"></script>
     <script>
+        /* const socket = io("<SOCKET_URI_PLACEHOLDER>", {
+            withCredentials: true,
+            extraHeaders: {
+                "my-custom-header": "abcd"
+            }
+        }); */
+
         const socket = io("https://meicm-cc-solo-project-socket-pjxah7gudq-uc.a.run.app", {
             withCredentials: true,
             extraHeaders: {
